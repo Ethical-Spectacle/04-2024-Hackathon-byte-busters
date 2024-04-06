@@ -1,13 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Dashboard from './Dashboard';
+// import { Heatmap } from './Components/Heatmap';
+// import { data } from "./Static/data";
+
 
 function App() {
   return (
     <div className="App">
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+     {/* <Heatmap width={600} height={400} data={data}/> */}
+     <Dashboard/>
     </div>
   );
 }
