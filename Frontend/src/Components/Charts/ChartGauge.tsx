@@ -1,12 +1,10 @@
 import React from 'react';
 import GaugeChart from 'react-gauge-chart';
 
-
 type Props = {
   width: number;
   height: number;
 }
-
 
 export default function ChartGauge({ width, height }: Props) {
   // Assuming the value is 225 kW
