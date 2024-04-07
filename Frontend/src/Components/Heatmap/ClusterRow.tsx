@@ -18,7 +18,7 @@ const ClusterRow = (props: Props) => {
                     props.data.clusters_status.map((data:Status, index) => {
                         let clusterLevel = props.data.cooling_type === 'cluster_level' && props.data.cluster_level_cooling.includes(index+1)
                         return (
-                            <div key={index} className='flex flex-col gap-3 bg-slate-900 shadow-2xl shadow-gray-900 p-5 transition hover:scale-110 delay-300 cursor-pointer'>
+                            <div key={index} className='flex flex-col gap-3 bg-slate-900 shadow-2xl p-5 transition hover:scale-110 delay-300 cursor-pointer'>
                                 <div className='text-center' style={{ backgroundColor:'#FFF', color:'#000' }}>{clusterLevel ? `${props.data.cooling_type} cooling` : 'row_level cooling'}</div>
                                 {/* Cluster Rendering */}
                                 <div className='flex flex-row gap-1'>
