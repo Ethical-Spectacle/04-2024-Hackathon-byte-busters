@@ -114,12 +114,12 @@ def main():
 
 if __name__ == '__main__':
     # Example usage
-    #main()
+    main()
 
-    layout = {
-            1 : [4, 5, 4],
-            2 : [4,5,4],
-            3 : [8,5,8]
-        }
-    data = generate_temperature_data(layout=layout)
-    print(data)
+    # layout = {
+    #         1 : [4, 5, 4],
+    #         2 : [4,5,4],
+    #         3 : [8,5,8]
+    #     }
+    # data = generate_temperature_data(layout=layout)
+    # print(data)
