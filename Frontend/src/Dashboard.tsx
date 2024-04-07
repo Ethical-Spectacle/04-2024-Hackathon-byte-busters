@@ -5,7 +5,6 @@ import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
-import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
@@ -22,6 +21,9 @@ import { drawerData } from './Static/data';
 import Power from './Components/Dashboards/Power';
 import Cooling from './Components/Dashboards/Cooling';
 import Result from './Components/Dashboards/Result';
+import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
+import AirIcon from '@mui/icons-material/Air';
+import AnalyticsIcon from '@mui/icons-material/Analytics';
 
 const drawerWidth = 240;
 
@@ -110,7 +112,7 @@ export default function Dashboard() {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
+      {/* <CssBaseline /> */}
       <AppBar position="fixed" open={open}>
         <Toolbar>
           <IconButton
@@ -130,7 +132,10 @@ export default function Dashboard() {
           </Typography>
         </Toolbar>
       </AppBar>
-      <Drawer variant="permanent" open={open}>
+      <Drawer variant="permanent" open={open}
+      
+
+      >
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
@@ -158,7 +163,9 @@ export default function Dashboard() {
                     justifyContent: 'center',
                   }}
                 >
-                  <MailIcon />
+                  { index === 0 ? <AirIcon/> : null}
+                  { index === 1 ? <PowerSettingsNewIcon/> : null}
+                  { index === 2 ? <AnalyticsIcon/> : null}
                 </ListItemIcon>
                 <ListItemText primary={data.title} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>

@@ -14,22 +14,24 @@ const Cooling = (props: Props) => {
 
         <div className="flex flex-col">
           <p className="text-xl font-bold">Latest Temperature</p>
-          <ChartBar/>
+          <ChartBar width={500}
+      height={300}/>
         </div>
 
         <div className="flex flex-col">
           <p className="text-xl font-bold">Heat Map</p>
-          <Heatmap data={data} width={600} height={400}/>
+          <Heatmap data={data} width={600} height={400} />
         </div>
 
         <div className="flex flex-col">
           <p className="text-xl font-bold">Cooling Capacity</p>
-          <ChartGauge/>
+          <ChartGauge />
         </div>
 
         <div className="flex flex-col">
           <p className="text-xl font-bold">Heat Comparison</p>
-          <ChartComparison/>
+          <ChartComparison width={500}
+            height={300} />
         </div>
 
       </div>
