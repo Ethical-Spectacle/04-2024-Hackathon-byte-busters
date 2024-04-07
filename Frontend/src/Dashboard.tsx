@@ -24,6 +24,7 @@ import Result from './Components/Dashboards/Result';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 import AirIcon from '@mui/icons-material/Air';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
+import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
 
@@ -113,7 +114,7 @@ export default function Dashboard() {
   return (
     <Box sx={{ display: 'flex' }}>
       {/* <CssBaseline /> */}
-      <AppBar position="fixed" open={open}>
+      {/* <AppBar position="fixed" open={open}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -130,8 +131,33 @@ export default function Dashboard() {
           <Typography variant="h6" noWrap component="div">
             Dashboard
           </Typography>
-        </Toolbar>
-      </AppBar>
+          <Button>SOS</Button>
+      </Toolbar>
+      </AppBar> */}
+
+<AppBar position="fixed" open={open}>
+  <Toolbar>
+    <IconButton
+      color="inherit"
+      aria-label="open drawer"
+      onClick={handleDrawerOpen}
+      edge="start"
+      sx={{
+        marginRight: 5,
+        ...(open && { display: 'none' }),
+      }}
+    >
+      <MenuIcon />
+    </IconButton>
+    <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
+      Dashboard
+    </Typography>
+    {/* Button moved here to align it to the right */}
+    <Button sx={{ backgroundColor:'red', color:'#FFF', fontSize: 18}}>SOS</Button>
+  </Toolbar>
+</AppBar>
+
+
       <Drawer variant="permanent" open={open}
       
 

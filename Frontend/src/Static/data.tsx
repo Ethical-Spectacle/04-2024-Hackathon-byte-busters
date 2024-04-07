@@ -45,7 +45,6 @@ for (let x = 0; x < nCol; x++) {
   }
 }
 
-console.log("HeatMapData:", data);
 
 
 const drawerData:drawerProps[] = [
