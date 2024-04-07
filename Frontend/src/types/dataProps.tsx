@@ -22,6 +22,7 @@ export interface clusterRowProps {
     cluster_id: number
     col_id: number
     temperature: number
+    fan_speed:number
   }
   export interface TemperatureColorProps {
     threshold: number;

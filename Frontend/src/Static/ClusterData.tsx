@@ -1,332 +1,432 @@
 import { clusterRowProps } from "../types/dataProps";
 
 export const clusterData:clusterRowProps[] = [
-    {
-      "row_id": 1,
-      "cooling_type": "cluster_level",
-      "cluster_level_cooling": [],
-      "clusters_status": [
-        {
-          "cluster_id": 1,
-          "cluster_type": "CPU",
-          "cooling_type": "row_level",
-          "rack_level_cooling": [],
-          "col_status": [
-            {
-              "cluster_id": 1,
-              "col_id": 1,
-              "temperature": 88.94
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 2,
-              "temperature": 71.77
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 3,
-              "temperature": 83.07
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 4,
-              "temperature": 89.01
-            }
-          ]
-        },
-        {
-          "cluster_id": 2,
-          "cluster_type": "CPU",
-          "cooling_type": "row_level",
-          "rack_level_cooling": [],
-          "col_status": [
-            {
-              "cluster_id": 2,
-              "col_id": 1,
-              "temperature": 61.67
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 2,
-              "temperature": 67.87
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 3,
-              "temperature": 60.08
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 4,
-              "temperature": 76.61
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 5,
-              "temperature": 63.64
-            }
-          ]
-        },
-        {
-          "cluster_id": 3,
-          "cluster_type": "CPU",
-          "cooling_type": "row_level",
-          "rack_level_cooling": [],
-          "col_status": [
-            {
-              "cluster_id": 3,
-              "col_id": 1,
-              "temperature": 60.82
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 2,
-              "temperature": 85.49
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 3,
-              "temperature": 74.35
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 4,
-              "temperature": 73.24
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "row_id": 2,
-      "cooling_type": "cluster_level",
-      "cluster_level_cooling": [],
-      "clusters_status": [
-        {
-          "cluster_id": 1,
-          "cluster_type": "CPU",
-          "cooling_type": "row_level",
-          "rack_level_cooling": [],
-          "col_status": [
-            {
-              "cluster_id": 1,
-              "col_id": 1,
-              "temperature": 0
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 2,
-              "temperature": 23
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 3,
-              "temperature": 26
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 4,
-              "temperature": 34
-            }
-          ]
-        },
-        {
-          "cluster_id": 2,
-          "cluster_type": "CPU",
-          "cooling_type": "row_level",
-          "rack_level_cooling": [],
-          "col_status": [
-            {
-              "cluster_id": 2,
-              "col_id": 1,
-              "temperature": 90.77
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 2,
-              "temperature": 67.24
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 3,
-              "temperature": 78.46
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 4,
-              "temperature": 97.89
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 5,
-              "temperature": 93.51
-            }
-          ]
-        },
-        {
-          "cluster_id": 3,
-          "cluster_type": "CPU",
-          "cooling_type": "row_level",
-          "rack_level_cooling": [],
-          "col_status": [
-            {
-              "cluster_id": 3,
-              "col_id": 1,
-              "temperature": 65.1
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 2,
-              "temperature": 77.14
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 3,
-              "temperature": 79.84
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 4,
-              "temperature": 66.88
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "row_id": 3,
-      "cooling_type": "cluster_level",
-      "cluster_level_cooling": [],
-      "clusters_status": [
-        {
-          "cluster_id": 1,
-          "cluster_type": "CPU",
-          "cooling_type": "row_level",
-          "rack_level_cooling": [],
-          "col_status": [
-            {
-              "cluster_id": 1,
-              "col_id": 1,
-              "temperature": 86.68
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 2,
-              "temperature": 62.02
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 3,
-              "temperature": 96.86
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 4,
-              "temperature": 89.88
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 5,
-              "temperature": 93.38
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 6,
-              "temperature": 63.2
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 7,
-              "temperature": 71.98
-            },
-            {
-              "cluster_id": 1,
-              "col_id": 8,
-              "temperature": 83.8
-            }
-          ]
-        },
-        {
-          "cluster_id": 2,
-          "cluster_type": "CPU",
-          "cooling_type": "row_level",
-          "rack_level_cooling": [],
-          "col_status": [
-            {
-              "cluster_id": 2,
-              "col_id": 1,
-              "temperature": 35
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 2,
-              "temperature": 71.27
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 3,
-              "temperature": 30.62
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 4,
-              "temperature": 37.43
-            },
-            {
-              "cluster_id": 2,
-              "col_id": 5,
-              "temperature": 23.91
-            }
-          ]
-        },
-        {
-          "cluster_id": 3,
-          "cluster_type": "CPU",
-          "cooling_type": "row_level",
-          "rack_level_cooling": [],
-          "col_status": [
-            {
-              "cluster_id": 3,
-              "col_id": 1,
-              "temperature": 80.36
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 2,
-              "temperature": 0
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 3,
-              "temperature": 85.9
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 4,
-              "temperature": 0.92
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 5,
-              "temperature": 10.92
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 6,
-              "temperature": 35.8
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 7,
-              "temperature": 20.77
-            },
-            {
-              "cluster_id": 3,
-              "col_id": 8,
-              "temperature": 66.85
-            }
-          ]
-        }
-      ]
-    }
-  ]
+  {
+    "row_id": 1,
+    "cooling_type": "row_level",
+    "cluster_level_cooling": [
+      1,
+      2,
+      3,
+      3
+    ],
+    "clusters_status": [
+      {
+        "cluster_id": 1,
+        "cluster_type": "CPU",
+        "cooling_type": "cluster_level",
+        "rack_level_cooling": [
+          1,
+          2,
+          4
+        ],
+        "col_status": [
+          {
+            "cluster_id": 1,
+            "col_id": 1,
+            "temperature": 52.84,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 2,
+            "temperature": 40.66,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 3,
+            "temperature": 32.57,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 4,
+            "temperature": 51.84,
+            "fan_speed": 60
+          }
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "cluster_type": "CPU",
+        "cooling_type": "cluster_level",
+        "rack_level_cooling": [
+          1,
+          4,
+          5
+        ],
+        "col_status": [
+          {
+            "cluster_id": 2,
+            "col_id": 1,
+            "temperature": 37.78,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 2,
+            "temperature": 31.1,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 3,
+            "temperature": 28.19,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 4,
+            "temperature": 47.61,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 5,
+            "temperature": 53.2,
+            "fan_speed": 60
+          }
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "cluster_type": "CPU",
+        "cooling_type": "cluster_level",
+        "rack_level_cooling": [
+          1,
+          3,
+          4
+        ],
+        "col_status": [
+          {
+            "cluster_id": 3,
+            "col_id": 1,
+            "temperature": 45.53,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 2,
+            "temperature": 27.32,
+            "fan_speed": 0
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 3,
+            "temperature": 44.33,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 4,
+            "temperature": 45.35,
+            "fan_speed": 50
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": 2,
+    "cooling_type": "row_level",
+    "cluster_level_cooling": [
+      1,
+      2,
+      3
+    ],
+    "clusters_status": [
+      {
+        "cluster_id": 1,
+        "cluster_type": "CPU",
+        "cooling_type": "cluster_level",
+        "rack_level_cooling": [
+          2,
+          3,
+          4
+        ],
+        "col_status": [
+          {
+            "cluster_id": 1,
+            "col_id": 1,
+            "temperature": 30.88,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 2,
+            "temperature": 57.52,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 3,
+            "temperature": 49.29,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 4,
+            "temperature": 45.26,
+            "fan_speed": 50
+          }
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "cluster_type": "CPU",
+        "cooling_type": "cluster_level",
+        "rack_level_cooling": [
+          1,
+          3,
+          4
+        ],
+        "col_status": [
+          {
+            "cluster_id": 2,
+            "col_id": 1,
+            "temperature": 39.18,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 2,
+            "temperature": 30.08,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 3,
+            "temperature": 40.52,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 4,
+            "temperature": 54.58,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 5,
+            "temperature": 29.79,
+            "fan_speed": 40
+          }
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "cluster_type": "CPU",
+        "cooling_type": "server_level",
+        "rack_level_cooling": [
+          2,
+          4
+        ],
+        "col_status": [
+          {
+            "cluster_id": 3,
+            "col_id": 1,
+            "temperature": 31.37,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 2,
+            "temperature": 39.2,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 3,
+            "temperature": 29.65,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 4,
+            "temperature": 50.1,
+            "fan_speed": 60
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "row_id": 3,
+    "cooling_type": "cluster_level",
+    "cluster_level_cooling": [
+      1,
+      3,
+    ],
+    "clusters_status": [
+      {
+        "cluster_id": 1,
+        "cluster_type": "GPU",
+        "cooling_type": "cluster_level",
+        "rack_level_cooling": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "col_status": [
+          {
+            "cluster_id": 1,
+            "col_id": 1,
+            "temperature": 10,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 2,
+            "temperature": 27,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 3,
+            "temperature": 59.41,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 4,
+            "temperature": 33.51,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 5,
+            "temperature": 59.5,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 6,
+            "temperature": 43.6,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 7,
+            "temperature": 34.13,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 1,
+            "col_id": 8,
+            "temperature": 35.73,
+            "fan_speed": 50
+          }
+        ]
+      },
+      {
+        "cluster_id": 2,
+        "cluster_type": "GPU",
+        "cooling_type": "cluster_level",
+        "rack_level_cooling": [
+          1,
+          4,
+          5
+        ],
+        "col_status": [
+          {
+            "cluster_id": 2,
+            "col_id": 1,
+            "temperature": 37.04,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 2,
+            "temperature": 32.87,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 3,
+            "temperature": 28.34,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 4,
+            "temperature": 50.09,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 2,
+            "col_id": 5,
+            "temperature": 57.39,
+            "fan_speed": 60
+          }
+        ]
+      },
+      {
+        "cluster_id": 3,
+        "cluster_type": "GPU",
+        "cooling_type": "cluster_level",
+        "rack_level_cooling": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8
+        ],
+        "col_status": [
+          {
+            "cluster_id": 3,
+            "col_id": 1,
+            "temperature": 50.58,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 2,
+            "temperature": 58.32,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 3,
+            "temperature": 54.33,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 4,
+            "temperature": 51.82,
+            "fan_speed": 60
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 5,
+            "temperature": 32.19,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 6,
+            "temperature": 29.82,
+            "fan_speed": 40
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 7,
+            "temperature": 46.15,
+            "fan_speed": 50
+          },
+          {
+            "cluster_id": 3,
+            "col_id": 8,
+            "temperature": 55.89,
+            "fan_speed": 60
+          }
+        ]
+      }
+    ]
+  }
+]
