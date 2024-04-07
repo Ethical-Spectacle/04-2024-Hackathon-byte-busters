@@ -59,7 +59,7 @@ def generate_temperature_data(layout):
                     })
             
             
-            if (len(rack_level_idx)/cluster) > 0.5:
+            if (len(rack_level_idx)/cluster) > 0.8:
                 cooling_type = "cluster_level"
                 cluster_level_idx.append(idx+1)
             else:
@@ -73,7 +73,7 @@ def generate_temperature_data(layout):
                 "col_status": col_status,
             })
         
-        if len(cluster_level_idx)/len(layout[row]) > 0.5:
+        if len(cluster_level_idx)/len(layout[row]) > 0.7:
             cooling_type = "row_level"
             cluster_level_idx.append(idx+1)
         else:
