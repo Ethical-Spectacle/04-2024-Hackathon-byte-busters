@@ -14,10 +14,6 @@ export const Heatmap = ({ width, height, data }: HeatmapProps) => {
   const boundsWidth = width - MARGIN.right - MARGIN.left;
   const boundsHeight = height - MARGIN.top - MARGIN.bottom;
 
-  // groups
-  // const allYGroups = useMemo(() => [...new Set(data.map((d) => d.y))], [data]);
-  // const allXGroups = useMemo(() => [...new Set(data.map((d) => d.x))], [data]);
-
   const allYGroups = useMemo(() => [...new Set(data.map(d => d.y))], [data]);
   const allXGroups = useMemo(() => [...new Set(data.map(d => d.x))], [data]);
 
@@ -27,7 +23,7 @@ export const Heatmap = ({ width, height, data }: HeatmapProps) => {
       .scaleBand()
       .range([0, boundsWidth])
       .domain(allXGroups)
-      .padding(0.01);
+      .padding(0.2);
   }, [data, width]);
 
   const yScale = useMemo(() => {
@@ -35,7 +31,7 @@ export const Heatmap = ({ width, height, data }: HeatmapProps) => {
       .scaleBand()
       .range([boundsHeight, 0])
       .domain(allYGroups)
-      .padding(0.01);
+      .padding(0.2);
   }, [data, height]);
 
   const [min, max] = d3.extent(data.map((d) => d.value));
@@ -80,6 +76,7 @@ export const Heatmap = ({ width, height, data }: HeatmapProps) => {
         textAnchor="middle"
         dominantBaseline="middle"
         fontSize={10}
+        fill="white"
       >
         {name}
       </text>
@@ -96,6 +93,7 @@ export const Heatmap = ({ width, height, data }: HeatmapProps) => {
         textAnchor="end"
         dominantBaseline="middle"
         fontSize={10}
+        fill="white"
       >
         {name}
       </text>

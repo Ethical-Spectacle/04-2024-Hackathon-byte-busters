@@ -1,4 +1,4 @@
-import { drawerProps } from "../types/dataProps";
+import { drawerProps, TemperatureColorProps } from "../types/dataProps";
 
 const nCol = 10;
 const nRow = 5;
@@ -45,6 +45,8 @@ for (let x = 0; x < nCol; x++) {
   }
 }
 
+console.log("HeatMapData:", data);
+
 
 const drawerData:drawerProps[] = [
   {
@@ -61,4 +63,12 @@ const drawerData:drawerProps[] = [
 }
 ]
 
-export { data, drawerData };
+const temperatureColors:TemperatureColorProps[] = [
+  { threshold: 0, color: "#FFF" },  // Green 
+  { threshold: 25, color: "#ADFF2F" }, // Lighter 
+  { threshold: 27, color: "#FFFF00" }, // Yellow 
+  { threshold: 35, color: "#FFA500" }, // Orange 
+  { threshold: 50, color: "#FF0000" }  // Red 
+];
+
+export { data, drawerData, temperatureColors };
