@@ -6,14 +6,6 @@ import ChartBar from '../Charts/ChartBar'
 import ChartGauge from '../Charts/ChartGauge'
 import { data } from '../../Static/data'
 import ChartComparison from '../Charts/ChartComparison'
-import Box from '@mui/material/Box';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-import Heatmap2 from '../Heatmap2'
-import { clusterData } from '../../Static/ClusterData'
-
 
 
 type Props = {}
@@ -65,11 +57,9 @@ const Cooling = (props: Props) => {
     setValue(newValue);
   };
 
-
   return (
     <>
       <div className='grid grid-cols-1 lg:grid-cols-2'>
-
         <Box sx={{ width: '100%', typography: 'body1' }}>
           <TabContext value={value}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -115,3 +105,8 @@ const Cooling = (props: Props) => {
 }
 
 export default Cooling
+
+
+
+
+
