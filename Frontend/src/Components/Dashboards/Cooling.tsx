@@ -52,7 +52,8 @@ const Cooling = (props: Props) => {
             </TabPanel>
             <TabPanel value="3">
               <div className="flex flex-col">
-                <ChartGauge />
+                <ChartGauge  width={500}
+            height={300} />
               </div>
             </TabPanel>
             <TabPanel value="4">

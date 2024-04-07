@@ -39,7 +39,7 @@ type Props = {
 //   );
 // }
 
-export default function ChartGauge({ width, height }: Props) {
+export default function ChartGaugeAfter({ width, height }: Props) {
   return (
     // <GaugeContainer
     //   width={200}
@@ -60,7 +60,7 @@ export default function ChartGauge({ width, height }: Props) {
       nrOfLevels={420}
       arcsLength={[0.3, 0.5, 0.2, 0.4]}
       colors={['#5BE12C','#0000FA', '#F5CD19', '#EA4228']}
-      percent={0.50}
+      percent={0.30}
       arcPadding={0.02}
       textColor='#ffff'
       formatTextValue={(value) => value + ' kw'}
