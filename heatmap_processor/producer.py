@@ -15,7 +15,7 @@ def disconnect():
 
 # Define a function to send data to the channel
 def push_data_to_channel(data):
-    sio.emit('data', json.dumps(data))
+    sio.emit('data/heatmap', json.dumps(data))
 
 def set_fan_speed(value):
     if value < 28:
@@ -109,17 +109,17 @@ def main():
 
         # Wait for a few seconds to allow the server to receive the data
         # You can remove this if you don't need to wait
-        sio.sleep(5)
+        sio.sleep(2)
     sio.disconnect()
 
 if __name__ == '__main__':
     # Example usage
-    #main()
+    main()
 
-    layout = {
-            1 : [4, 5, 4],
-            2 : [4,5,4],
-            3 : [8,5,8]
-        }
-    data = generate_temperature_data(layout=layout)
-    print(data)
+    # layout = {
+    #         1 : [4, 5, 4],
+    #         2 : [4,5,4],
+    #         3 : [8,5,8]
+    #     }
+    # data = generate_temperature_data(layout=layout)
+    # print(data)

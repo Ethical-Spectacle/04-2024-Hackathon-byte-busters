@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+// import { Socket, io } from 'socket.io-client';
+import { Server, Socket } from 'socket.io';
+
 import ChartBar from '../Charts/ChartBar'
 import ChartGauge from '../Charts/ChartGauge'
-import { Heatmap } from '../Heatmap'
 import { data } from '../../Static/data'
 import ChartComparison from '../Charts/ChartComparison'
 import Box from '@mui/material/Box';
@@ -13,15 +15,56 @@ import Heatmap2 from '../Heatmap2'
 import { clusterData } from '../../Static/ClusterData'
 
 
+
 type Props = {}
 
 const Cooling = (props: Props) => {
 
-  const [value, setValue] = React.useState('1');
+  const [value, setValue] = useState('1');
+  const [socketIns, setSocketIns] = useState<Socket | null>(null);
+
+  const [buttonStatus, setButtonStatus] = useState<boolean>(false);
+
+
+ 
+  // const handleClick = () => {
+  //   if(buttonStatus === false) {
+  //     setButtonStatus(true);
+  //   } else {
+  //     setButtonStatus(false);
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   if(buttonStatus === true) {
+  //     const socket: Socket = io("localhost:5001", {
+  //       transports: ['websocket'],
+  //       // cors:{
+  //       //   origin: 'http://localhost:3000'
+  //       // }
+  //     });
+  
+  //     setSocketIns(socket);
+  
+  //     socket.on('connect', () => {
+  //       console.log("connected to server");
+  //       // If your 'connect' event sends back data, type and use it here
+  //     });
+  
+  //     socket.on('disconnect', (reason: string) => {
+  //       console.log(reason);
+  //     });
+  
+  //     return function cleanup() {
+  //       socket.disconnect();
+  //     };
+  //   }
+  // }, [buttonStatus]);
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
+
 
   return (
     <>
@@ -41,6 +84,7 @@ const Cooling = (props: Props) => {
             <TabPanel value="1">
               <div className="flex flex-col">
                 {/* <Heatmap data={data} width={700} height={400} /> */}
+                {/* <button onClick={()=> handleClick()}>Get Data</button> */}
                 <Heatmap2 data={clusterData}/>
               </div>
             </TabPanel>

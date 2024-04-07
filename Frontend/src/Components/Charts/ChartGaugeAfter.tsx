@@ -60,10 +60,11 @@ export default function ChartGaugeAfter({ width, height }: Props) {
       nrOfLevels={420}
       arcsLength={[0.3, 0.5, 0.2, 0.4]}
       colors={['#5BE12C','#0000FA', '#F5CD19', '#EA4228']}
-      percent={0.30}
+      // percent={0.360}
+      
       arcPadding={0.02}
       textColor='#ffff'
-      formatTextValue={(value) => value + ' kw'}
+      formatTextValue={() => 360 + ' kw'}
 />
 
 

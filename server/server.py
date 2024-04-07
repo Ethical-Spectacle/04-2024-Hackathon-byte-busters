@@ -15,12 +15,12 @@ def http_call():
 @socketio.on("connect")
 def connected():
     print("client has connected with id: ", request.sid)
-    emit("connect",{"data":f"id: {request.sid} is connected"})
+    # emit("connect",{"data":f"id: {request.sid} is connected"})
 
-@socketio.on('data')
+@socketio.on('data/heatmap')
 def handle_message(data):
     print("data from the front end: ",str(data))
-    emit("data",{'data':data,'id':request.sid},broadcast=True)
+    emit("data/heatmap",{'data':data,'id':request.sid},broadcast=True)
 
 @socketio.on("disconnect")
 def disconnected():
