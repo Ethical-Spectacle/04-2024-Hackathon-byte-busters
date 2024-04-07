@@ -53,7 +53,7 @@ export default function ChartGauge() {
       nrOfLevels={420}
       arcsLength={[0.3, 0.5, 0.2, 0.4]}
       colors={['#5BE12C','#0000FA', '#F5CD19', '#EA4228']}
-      percent={0.37}
+      percent={0.50}
       arcPadding={0.02}
       textColor='#000'
       formatTextValue={(value) => value + ' kw'}
