@@ -253,17 +253,15 @@ export const clusterData:clusterRowProps[] = [
   },
   {
     "row_id": 3,
-    "cooling_type": "row_level",
+    "cooling_type": "cluster_level",
     "cluster_level_cooling": [
       1,
-      2,
       3,
-      3
     ],
     "clusters_status": [
       {
         "cluster_id": 1,
-        "cluster_type": "CPU",
+        "cluster_type": "GPU",
         "cooling_type": "cluster_level",
         "rack_level_cooling": [
           1,
@@ -277,13 +275,13 @@ export const clusterData:clusterRowProps[] = [
           {
             "cluster_id": 1,
             "col_id": 1,
-            "temperature": 53.83,
+            "temperature": 10,
             "fan_speed": 60
           },
           {
             "cluster_id": 1,
             "col_id": 2,
-            "temperature": 56.35,
+            "temperature": 27,
             "fan_speed": 60
           },
           {
@@ -326,7 +324,7 @@ export const clusterData:clusterRowProps[] = [
       },
       {
         "cluster_id": 2,
-        "cluster_type": "CPU",
+        "cluster_type": "GPU",
         "cooling_type": "cluster_level",
         "rack_level_cooling": [
           1,
@@ -368,7 +366,7 @@ export const clusterData:clusterRowProps[] = [
       },
       {
         "cluster_id": 3,
-        "cluster_type": "CPU",
+        "cluster_type": "GPU",
         "cooling_type": "cluster_level",
         "rack_level_cooling": [
           1,

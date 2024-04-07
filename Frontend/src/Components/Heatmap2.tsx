@@ -13,7 +13,8 @@ const Heatmap2 = (props: Props) => {
         {
             props.data.map((item: clusterRowProps, index: number) => {
                 return (
-                    <ClusterRow type={1} data={item}/>
+                    
+                    <ClusterRow data={item}/>
                 )
             })
         }

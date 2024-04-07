@@ -55,6 +55,7 @@ export default function ChartGauge({ width, height }: Props) {
     // </GaugeContainer>
 
     <>
+    {/* <div style={{ width: width, height: height }}> */}
     <div style={{ width: width, height: height }}>
     <GaugeChart id="gauge-chart5"
       nrOfLevels={420}

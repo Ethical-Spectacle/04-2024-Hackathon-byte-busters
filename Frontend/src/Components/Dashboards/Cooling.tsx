@@ -46,20 +46,20 @@ const Cooling = (props: Props) => {
             </TabPanel>
             <TabPanel value="2">
               <div className="flex flex-col w-full">
-                <ChartBar width={500}
-                  height={300} />
+                <ChartBar width={1200}
+                  height={500} />
               </div>
             </TabPanel>
             <TabPanel value="3">
               <div className="flex flex-col">
-                <ChartGauge  width={500}
-            height={300} />
+                <ChartGauge  width={1000}
+            height={400} />
               </div>
             </TabPanel>
             <TabPanel value="4">
               <div className="flex flex-col">
-                <ChartComparison width={500}
-                  height={300} />
+                <ChartComparison width={1200}
+                  height={500} />
               </div>
             </TabPanel>
           </TabContext>
